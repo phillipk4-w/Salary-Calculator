@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Salary Calculator</title>
 </head>
 <body>
-    
+    <h1>Salary Calculator</h1>
+    <div class="main">
+        <h2>Wage info:</h2>
+        <p>Pay type: </p>
+        <label for="hourly">Hourly:</label>
+        <input type="radio" id="hourly" name="wage_type" value="hourly">
+        <label for="salary">Salary:</label>
+        <input type="radio" id="salary" name="wage_type" value="salary"><br>
+        <div class="input" id="input">
+            PLEASE SELECT A SALARY TYPE
+        </div>
+    </div>
+    <div class="table">
+    <div class="card">
+        <div class="container">
+            <h2>Weekly Take Home</h2>
+            <div id="weekly">
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="container">
+            <h2>Monthly Take Home</h2>
+            <div id="monthly"></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="container">
+            <h2>Yearly Take Home</h2>
+            <div id="yearly"></div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
